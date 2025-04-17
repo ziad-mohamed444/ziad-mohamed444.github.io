@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+.header
+{
+    animation: header 4s;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('imges/pic4.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    background-color: #444;
+    padding-bottom: 15px;
+}
+
+.logo {
+    font-size: 45px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.navitems {
+    position: relative;
+    left: 12%;
+    display: flex;
+    padding-top: 22px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.navitems a {
+    font-size: 22px;
+    padding: 0px 14px;
+    color: #fff;
+}
+
+.navitems a:hover {
+    background-color: #000000;
+    color: red;
+    border-radius: 10px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.downmenu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.down:hover .downmenu {
+    opacity: 1;
+}
+
+.user {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    left: 22%;
+    padding-top: 30px;
+    font-size: 22px;
+}
+
+.user a {
+    padding: 0px 14px;
+    color: #fff;
+}
+
+.user a:hover {
+    background-color: #000000;
+    color: red;
+    border-radius: 10px;
+}
+.laptops
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.laptops h1
+{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.note
+{
+    width: 80%;
+    margin: auto;
+}
+.row
+{
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.laptops-col
+{
+    width: 25%;
+    height: fit-content;
+    flex-basis: 31%;
+    background: white;
+    margin-bottom: 5%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.laptops-col:hover
+{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.laptops-col img
+{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: 0px;
+    height: 100%;
+}
+h1
+{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 13px;
+}
+.active::after
+{
+    width: 5%;
+}
+.ve a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.ve {
+    text-align: right;
+}
+.ve a:hover
+{
+    color: white;
+    background: black;
+    transition: 0.5s;
+}

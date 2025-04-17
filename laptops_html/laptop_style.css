@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+/* nav css */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    background-color: #444;
+    padding-bottom: 15px;
+}
+
+.logo {
+    font-size: 45px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.navitems {
+    position: relative;
+    left: 12%;
+    display: flex;
+    padding-top: 22px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.navitems a {
+    font-size: 22px;
+    padding: 0px 14px;
+    color: #fff;
+}
+
+.navitems a:hover {
+    background-color: #000000;
+    color: red;
+    border-radius: 10px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.downmenu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.down:hover .downmenu {
+    opacity: 1;
+}
+
+.user {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    left: 22%;
+    padding-top: 30px;
+    font-size: 22px;
+}
+
+.user a {
+    padding: 0px 14px;
+    color: #fff;
+}
+
+.user a:hover {
+    background-color: #000000;
+    color: red;
+    border-radius: 10px;
+}
+/* page css */
+.product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product-image {
+    width: 40%; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #f0f0f0;
+}
+
+.product-image img.laptop-image {
+    max-width: 90%; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product-image img.laptop-image:hover {
+    transform: scale(1.05);
+}
+
+.laptop-details {
+    width: 60%;
+    padding: 25px;
+}
+
+.laptop-info {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.laptop-price {
+    font-size: 28px;
+    color: #3498db;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.laptop-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.specs-container {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.specs-name {
+    font-weight: bold;
+    color: #666;
+}
+.specs {
+    color: #333;
+}
+/* foot css */
+
+.foot {
+    padding: 40px 20px;
+    border-top: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.foot h1 {
+    font-size: 50px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    color: #000000;
+    color: red;
+}
+
+.me p,.me h3 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.foot h2 {
+    font-size: 20px;
+    color: #fff;
+}
+.phowtos img{
+    width: 300px;
+    height: auto;
+}
