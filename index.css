@@ -14,6 +14,7 @@
     background-size: cover;
     position: relative;
 }
+/* nav css */
 a {
     text-decoration: none;
     color: #000;
@@ -95,12 +96,18 @@ ul {
     color: red;
     border-radius: 10px;
 }
+/* laptops css */
+.title
+{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
 .laptops
 {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding-top: 50px;
-}
+    padding: 20px 0;}
 .laptops h1
 {
     font-size: 30px;
@@ -113,36 +120,45 @@ ul {
     width: 80%;
     margin: auto;
 }
-.row
-{
+
+.laptop_section {
     margin: 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.laptops-col
-{
-    width: 25%;
+.laptops-card {
+    width: 18%;
     height: fit-content;
-    flex-basis: 31%;
+    flex-basis: 18%;
     background: white;
-    margin-bottom: 5%;
-    padding: 8px 8px;
+    margin-bottom: 20px;
     box-sizing: border-box;
-    transition: 0.5s;
+    /* transition: 0.5s; */
+    padding: 15px
 }
 
-.laptops-col:hover
+.laptops-card:hover
 {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
-.laptops-col img
+.laptops-card img
 {
     position: relative;
     z-index: 1;
     width: 100%;
     border-radius: 0px;
     height: 100%;
+}
+.laptops-card h3 {
+    margin: 10px 0;
+    padding: 0 5px;
+}
+.laptops-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0; 
+    padding: 0 5px; 
 }
 h1
 {
@@ -153,11 +169,11 @@ h1
 p{
     font-size: 13px;
 }
-.active::after
+.title::after
 {
     width: 5%;
 }
-.ve a
+.Buy-Now a
 {
     display: inline-block;
     text-decoration: none;
@@ -166,13 +182,72 @@ p{
     padding: 5px 20px;
     font-size: 15px;
     border-radius: 20px;
+    margin-top: 10px;
 }
-.ve {
+.Buy-Now {
     text-align: right;
 }
-.ve a:hover
+.Buy-Now a:hover
 {
     color: white;
     background: black;
     transition: 0.5s;
 }
+/* foot css */
+
+.foot {
+    padding: 40px 20px;
+    border-top: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.foot h1 {
+    font-size: 50px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    color: #000000;
+    color: red;
+}
+
+.me p,.me h3 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.foot h2 {
+    font-size: 20px;
+    color: #fff;
+}
+.phowtos img{
+    width: 300px;
+    height: auto;
+}
+
+
+
+
+
+
+
