@@ -134,6 +134,21 @@ ul {
     height: auto;
     transition: transform 0.3s ease;
 }
+.buy-now {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 200px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #002c3e;
+}
 
 .laptop-details {
     width: 60%;
@@ -175,10 +190,12 @@ ul {
 
 .specs-name {
     font-weight: bold;
-    color: #000;
 }
 .specs {
-    color: #000;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    line-height: 1.4;    
 }
 
  /* Product Description CSS  */

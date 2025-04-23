@@ -34,6 +34,25 @@
         <input type="text" id="searchInput" placeholder="find out" autocomplete="off"/>
         <button id="searchButton">search</button>
     </div>
+    <script>
+        window.onload = function () {
+            document.getElementById("searchButton").onclick = function () {
+            var text = document.getElementById("searchInput").value.toLowerCase();
+            var cards = document.getElementsByClassName("laptop-card");
+            for (var i = 0; i < cards.length; i++) {
+                var name = cards[i].querySelector("strong").innerText.toLowerCase();
+                if (name.includes(text)) {
+                cards[i].style.display = "flex";
+                } else {
+                cards[i].style.display = "none";
+                }
+            }
+            };
+        };
+        document.getElementById("searchInput").addEventListener("input", function () {
+        document.getElementById("searchButton").click();
+    });
+    </script>
 <!-- Laptops section -->
     <section class="laptops">
         <h1 class="title">Laptops</h1>
@@ -180,5 +199,6 @@
             <h2>Mnjaro Store © 2019 All Rights Reserved. Designed by Mnjaro Store</h2>
         </div>
     </footer>
+    
     </body>
 </html>
